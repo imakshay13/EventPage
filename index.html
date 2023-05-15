@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assests/favicon.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>React Conf 2023</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./assests/logo.svg" alt="React logo" />
+          React Conf.
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#speakers" class="nav__link">Speakers</a>
+            </li>
+            <li class="nav__item">
+              <a href="#schedule" class="nav__link">Schedule</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__buttons">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <img
+            src="./assests/react_main_image.png"
+            alt="home image"
+            class="home__img"
+          />
+          <div class="home__data">
+            <h1 class="home__title">Times are changing and so is React!</h1>
+            <p class="home__description">Exploring the latest in React.</p>
+            <a href="#newsletter" class="button"
+              >Register Now <i class="ri-arrow-right-line"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <span class="section__subtitle">About Us</span>
+            <p class="about__description">
+              React Conf. is a two day, single track conference for developers
+              of all backgrounds using React.js, React Native, and related
+              tools. Speakers will cover topics like React Native, state
+              management, hooks, universal JavaScript, and more. Whether you're
+              a seasoned developer who has been using React since before it was
+              cool, or a newcomer to the scene, React Conf. 2023 has something
+              for everyone!
+            </p>
+          </div>
+          <img
+            src="./assests/reactConf.gif"
+            alt="React Conf image"
+            class="about__img"
+          />
+        </div>
+      </section>
+
+      <section class="speakers section" id="speakers">
+        <span class="section__subtitle">Speakers</span>
+        <div class="popular__container container grid">
+          <article class="popular__card">
+            <img
+              src="./assests/speaker1.jpeg"
+              alt="speaker 1"
+              class="popular__img"
+            />
+            <h3 class="popular__name">Misko Hevery</h3>
+            <span class="popular__description"
+              >Builder.io, Qwik Creator, USA</span
+            >
+            <span class="popular__price"
+              >Speeding up your React App with Less Javascript</span
+            >
+            <button class="popular__button">
+              <i class="ri-linkedin-box-fill"></i>
+            </button>
+          </article>
+          <article class="popular__card">
+            <img
+              src="./assests/speaker2.jpeg"
+              alt="speaker 2"
+              class="popular__img"
+            />
+            <h3 class="popular__name">Sara Vieira</h3>
+            <span class="popular__description">axo.dev, Germany</span>
+            <span class="popular__price"
+              >Guide on performance optimization</span
+            >
+            <button class="popular__button">
+              <i class="ri-linkedin-box-fill"></i>
+            </button>
+          </article>
+          <article class="popular__card">
+            <img
+              src="./assests/speaker3.jpeg"
+              alt="speaker 3"
+              class="popular__img"
+            />
+            <h3 class="popular__name">Mark Dalgleish</h3>
+            <span class="popular__description">Shopify, Australia</span>
+            <span class="popular__price">CSS modules, Remix development</span>
+            <button class="popular__button">
+              <i class="ri-linkedin-box-fill"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="schedule section" id="schedule">
+        <div class="recently__container container grid">
+          <div class="recently__data">
+            <span class="section__subtitle">Schedule</span>
+            <p class="recently__description">
+              Starts with React Server Component & Deep diving on concurrent
+              React Streming. And then we takes a deep dive in new React
+              Frameworks and new rendering approch in Front-end world with Qwik,
+              NextJS. Explaining Server Side Rendering with NextJS, followed by
+              Deep dive into react profiles and performance optimization. Then
+              we move onto CSS with tailwind and explain new CSS In JS
+              libraries. And ends with Building a balanced Design system and
+              also talk about measuring coverage of Design System
+            </p>
+            <a href="#newsletter" class="button"
+              >Register Now <i class="ri-arrow-right-line"></i
+            ></a>
+          </div>
+          <img
+            src="./assests/logo.svg"
+            alt="scheduleimage"
+            class="recently__data-img"
+          />
+        </div>
+      </section>
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter__container container">
+          <div class="newsletter__content grid">
+            <div class="newsletter__data">
+              <img
+                src="./assests/ReactCommunity.jpeg"
+                alt="React community"
+                class="newsletter__img"
+              />
+              <span class="section__subtitle">Be a part of our community</span>
+              <form action="" class="newsletter__form">
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  class="newsletter__input"
+                />
+                <button class="button newsletter__button">
+                  Register Now <i class="ri-send-plane-line"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">All Rights Reserved &reg;</div>
+    </footer>
+    <script defer src="./main.js"></script>
+  </body>
+</html>
